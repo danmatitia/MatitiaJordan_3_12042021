@@ -54,7 +54,7 @@ body {
   align-items: center;
   background-color: #FFFFFF;
 }
-@media (max-width: 599px) {
+@media (max-width: 375px) {
   .main1 {
     flex-direction: column;
   }
@@ -141,8 +141,13 @@ body {
 }
 .steps__choice {
   width: 50%;
-  display: block;
+  display: flex;
   margin-left: 5px;
+}
+@media (max-width: 375px) {
+  .steps__choice {
+    display: block;
+  }
 }
 .steps__container {
   display: flex;
