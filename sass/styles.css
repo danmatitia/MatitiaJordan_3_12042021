@@ -355,7 +355,7 @@ body {
 @media (max-width: 375px) {
   .steps__container {
     width: 68em;
-    height: 10em;
+    height: 13em;
     border-radius: 50px;
   }
 }
