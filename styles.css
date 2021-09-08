@@ -10,7 +10,7 @@ body {
 
 @media (max-width: 768px) {
   body {
-    width: 68em;
+    width: 75em;
   }
 }
 
@@ -99,7 +99,7 @@ body {
 
 @media (max-width: 768px) {
   .main1 {
-    width: 75em;
+    width: 78em;
   }
 }
 
@@ -112,8 +112,8 @@ body {
 
 @media (max-width: 375px) {
   .main1 .logo {
-    height: 8em;
-    width: 81em;
+    width: 82em;
+    height: 9em;
   }
 }
 
@@ -129,10 +129,10 @@ body {
   z-index: 1;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .logo {
-    width: 53em;
-    height: 11em;
+    width: 65em;
+    height: 9em;
   }
 }
 
@@ -193,7 +193,7 @@ body {
 
 @media (max-width: 768px) {
   .banner {
-    width: 75em;
+    width: 78em;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -299,7 +299,7 @@ body {
 
 @media (max-width: 768px) {
   .steps__header {
-    font-size: 50px;
+    font-size: 35px;
   }
 }
 
@@ -355,9 +355,13 @@ body {
 @media (max-width: 375px) {
   .steps__container {
     width: 68em;
-    height: 10em;
+    height: 13em;
     border-radius: 50px;
   }
+}
+
+.steps__container:hover {
+  background-color: #b488e9;
 }
 
 .steps__container i {
@@ -425,9 +429,6 @@ body {
 .restaurants {
   background-color: #f2f2f2;
   padding: 20px 20px 40px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 @media (max-width: 375px) {
@@ -447,7 +448,7 @@ body {
 
 @media (max-width: 768px) {
   .restaurants__header {
-    font-size: 50px;
+    font-size: 35px;
     margin-right: 30em;
   }
 }
@@ -459,6 +460,25 @@ body {
 @media (max-width: 768px) {
   .restaurants h2  {
     margin-right: 30em;
+  }
+}
+
+.restocard {
+  height: 14em;
+  width: 61em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 30px;
+}
+
+@media (max-width: 375px) {
+  .restocard {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 193em;
   }
 }
 
@@ -570,7 +590,7 @@ body {
 
 @media (max-width: 375px) {
   .card__bottom {
-    font-size: 35px;
+    font-size: 42px;
     margin-left: 30px;
     margin-bottom: 12px;
   }
@@ -606,15 +626,32 @@ body {
   }
 }
 
-.card__bottom .fa-heart:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #9356DC), color-stop(85%, #FF79DA));
-  background: linear-gradient(180deg, #9356DC 15%, #FF79DA 85%);
-  font-weight: bold;
+.card__bottom span .fa-heart {
+  font-size: 26px;
+  opacity: 1;
+}
+
+@media (max-width: 375px) {
+  .card__bottom span .fa-heart {
+    font-size: 1em;
+  }
 }
 
 .card__name {
   margin-bottom: -9px;
   margin-top: 4px;
+}
+
+.card .fa-plein-acceuil {
+  -webkit-transform: translateX(-2px);
+          transform: translateX(-2px);
+}
+
+.card:hover {
+  opacity: 1;
+  color: #E47AF6;
+  -webkit-transition-duration: 2.5s;
+          transition-duration: 2.5s;
 }
 
 /*footer*/
@@ -626,22 +663,34 @@ footer {
 
 @media (max-width: 768px) {
   footer {
-    width: 73em;
+    width: 76em;
   }
 }
 
+footer .logofooter {
+  margin: 10px 20px;
+  color: white;
+  width: 100px;
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+}
+
 footer ul {
-  margin-left: 33em;
+  margin-left: 16em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (max-width: 768px) {
   footer ul {
     margin-left: 1em;
+    display: block;
   }
 }
 
 footer li {
-  margin-left: -17px;
+  margin-left: 24px;
   list-style: none;
   line-height: 30px;
 }
@@ -649,7 +698,7 @@ footer li {
 @media (max-width: 768px) {
   footer li {
     margin-bottom: 40px;
-    font-size: 49px;
+    font-size: 45px;
   }
 }
 
@@ -681,7 +730,7 @@ footer h2 {
 @media (max-width: 768px) {
   footer h2 {
     margin-left: 1em;
-    font-size: 55px;
+    font-size: 65px;
   }
 }
 
@@ -698,6 +747,12 @@ footer h2 {
   padding: 3px;
 }
 
+@media (max-width: 375px) {
+  .main {
+    width: 77em;
+  }
+}
+
 /*image restaurant*/
 .bg-image {
   height: 17em;
@@ -712,7 +767,7 @@ footer h2 {
 
 @media (max-width: 768px) {
   .bg-image {
-    width: 68em;
+    width: 78em;
   }
 }
 
@@ -738,6 +793,7 @@ footer h2 {
   border-radius: 42px 42px 0 0;
   background-color: #F6F6F6;
   padding: 35px 20px;
+  height: 30em;
 }
 
 @media (max-width: 768px) {
@@ -747,7 +803,7 @@ footer h2 {
         -ms-flex-direction: column;
             flex-direction: column;
     font-size: 30px;
-    width: 35em;
+    width: 41em;
   }
 }
 
@@ -1011,12 +1067,14 @@ h5 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: -75px;
+  margin-top: -128px;
+  margin-bottom: 90px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .button-container {
     margin-bottom: 70px;
+    margin-top: 73em;
   }
 }
 
@@ -1027,7 +1085,7 @@ h5 {
   height: 50px;
   color: #000000;
   color: #FFFFFF;
-  border-radius: 30px;
+  border-radius: 50px;
   border-style: hidden;
   outline: none;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #FF79DA), color-stop(85%, #9356DC));
@@ -1066,7 +1124,7 @@ h5 {
 
 .favorite {
   height: 2rem;
-  width: 2rem;
+  width: 3rem;
   background-color: transparent;
   padding: 0;
   display: -webkit-box;

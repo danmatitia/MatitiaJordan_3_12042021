@@ -6,7 +6,7 @@ body {
     color: #000000;
     background-color: #F6F6F6;
     @media (max-width: 768px) {
-      width: 68em;
+      width: 75em;
     }
   }
   
@@ -63,15 +63,15 @@ body {
     flex-direction: column;
   }
   @media (max-width: 768px) {
-    width: 75em;
+    width: 78em;
   }
   .logo{
       box-shadow: 0 0 0.5rem rgba(0,0,0,0.20);
       height: 4em;
       width: 100%;
       @media (max-width: 375px) {
-        height: 8em;
-        width: 81em;
+        width: 82em;
+        height: 9em;
       }
   }
 }
@@ -81,9 +81,9 @@ body {
   display: flex;
   align-items: center;
   z-index: 1;
-  @media (max-width: 375px) {
-    width: 53em;
-    height: 11em;
+  @media (max-width: 768px) {
+    width: 65em;
+    height: 9em;
   }
 
   &__image {
@@ -124,7 +124,7 @@ body {
   background-color: #f2f2f2;
   padding: 10px 0px 10px 0px;
   @media (max-width: 768px) {
-    width: 75em;
+    width: 78em;
     flex-direction: column;
   }
   @media (max-width: 375px) {
@@ -198,7 +198,7 @@ body {
   }
   &__header{
     @media (max-width: 768px) {
-      font-size: 50px;
+      font-size: 35px;
     }
     @media (max-width: 375px) {
       font-size: 50px;
@@ -232,6 +232,9 @@ body {
         width: 68em;
         height: 13em;
         border-radius: 50px;
+      }
+      &:hover{
+        background-color: #b488e9;
       }
       i{
       margin-right: 24px;
@@ -284,7 +287,6 @@ body {
   .restaurants {
     background-color: #f2f2f2;
     padding: 20px 20px 40px 20px;
-    display: flex;
     @media (max-width: 375px) {
       font-size: large;
     }
@@ -295,7 +297,7 @@ body {
     }
     &__header{
       @media (max-width: 768px) {
-        font-size: 50px;
+        font-size: 35px;
         margin-right: 30em;
       }
     }
@@ -304,6 +306,17 @@ body {
       @media (max-width: 768px) {
         margin-right: 30em;
       }
+    }
+  }
+
+  .restocard{
+    height: 14em;
+    width: 61em;
+    display: flex;
+    margin-left: 30px;
+    @media (max-width: 375px) {
+      flex-direction: column;
+      height: 193em;
     }
   }
   
@@ -372,7 +385,7 @@ body {
         position: relative;
         margin: 10px;
         @media (max-width: 375px) {
-          font-size: 35px;
+          font-size: 42px;
           margin-left: 30px;
           margin-bottom: 12px;
         }
@@ -394,19 +407,29 @@ body {
             @media (max-width: 375px) {
               font-size: 65px;
             }
+            .fa-heart{
+              font-size: 26px;
+              opacity: 1;
+              @media (max-width: 375px) {
+                font-size: 1em;
+              }
+            }
           }
-          .fa-heart{
-            &:hover {
-            background: linear-gradient(180deg,#9356DC 15%, #FF79DA 85%);
-            font-weight: bold;
         }
-      }
-      }
-    &__name{
+    &__name {
         margin-bottom: -9px;
         margin-top: 4px;
     }
-}
+
+    .fa-plein-acceuil{
+      transform: translateX(-2px);
+      }
+      &:hover{
+        opacity: 1;
+        color: #E47AF6;
+        transition-duration: 2.5s;
+      }
+    }
 
 
 /*footer*/ 
@@ -416,22 +439,30 @@ footer{
   color: white;
   background-color:  #353535;
   @media (max-width: 768px) {
-    width: 73em;
+    width: 76em;
   }
-  
+.logofooter{
+    margin: 10px 20px;
+    color: white;
+    width: 100px;
+    font-family: "Shrikhand", cursive;
+    font-style: italic;
+}
   ul{
-    margin-left: 33em;
+    margin-left: 16em;
+    display: flex;
     @media (max-width: 768px) {
       margin-left: 1em;
+      display: block;
     }
   }
   li{
-      margin-left: -17px;
+      margin-left: 24px;
       list-style: none;
       line-height: 30px;
       @media (max-width: 768px) {
         margin-bottom: 40px;
-        font-size: 49px;
+        font-size: 45px;
       }
       a{
           color: white;
@@ -452,7 +483,7 @@ footer{
       }
       @media (max-width: 768px) {
         margin-left: 1em;
-        font-size: 55px;
+        font-size: 65px;
       }
   }
 }
@@ -465,7 +496,11 @@ footer{
   align-items: center;
   background-color: #FFFFFF;
   padding: 3px;
+  @media (max-width: 375px) {
+    width: 77em;
+  }
 }
+
   /*image restaurant*/
 .bg-image{
   height: 17em;
@@ -474,7 +509,7 @@ footer{
     height: 27em;
   }
   @media (max-width: 768px) {
-     width: 68em;
+     width: 78em;
   }
   img{
       width: 100%;
@@ -493,10 +528,11 @@ footer{
   border-radius: 42px 42px 0 0;
   background-color: #F6F6F6;
   padding: 35px 20px;
+  height: 30em;
   @media (max-width: 768px) {
     flex-direction: column;
     font-size: 30px;
-    width: 35em;
+    width: 41em;
   }
   .name{
       display: flex;
@@ -680,9 +716,11 @@ h5{
 .button-container{
   display: flex;
   justify-content: center;
-  margin-top: -75px;
-  @media (max-width: 375px) {
+  margin-top: -128px;
+  margin-bottom: 90px;
+  @media (max-width: 768px) {
     margin-bottom: 70px;
+    margin-top: 73em;
   }
 }
 
@@ -693,7 +731,7 @@ h5{
   height: 50px;
   color: #000000;
   color: #FFFFFF;
-  border-radius: 30px;
+  border-radius: 50px;
   border-style: hidden;
   outline: none;
   background: linear-gradient(180deg,#FF79DA 15%, #9356DC 85%);
@@ -726,7 +764,7 @@ h5{
 
 .favorite{
   height: 2rem;
-  width: 2rem;
+  width: 3rem;
   background-color: transparent;
   padding: 0;
   display: flex;
@@ -817,4 +855,3 @@ h5{
     transform: translateY(0);
   }
 }
-
