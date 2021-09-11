@@ -59,41 +59,36 @@ body {
   display: flex;
   align-items: center;
   background-color: #FFFFFF;
+  @media (max-width: 768px) {
+    width: 191em;
+  }
   @media (max-width: 375px) {
     flex-direction: column;
-    width: 87em;
-  }
-  @media (max-width: 768px) {
-    width: 87em;
+    width: 93em;
   }
   .logo{
       box-shadow: 0 0 0.5rem rgba(0,0,0,0.20);
       height: 4em;
       width: 100%;
+      background-color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      z-index: 1;
+      @media (max-width: 768px) {
+        width: 167em;
+        height: 20em;
+      }
       @media (max-width: 375px) {
         width: 95em;
         height: 13em;
       }
+      &__image {
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
   }
-}
-.logo{
-  background-color: #FFFFFF;
-  height: 3em;
-  display: flex;
-  align-items: center;
-  z-index: 1;
-  @media (max-width: 768px) {
-    width: 65em;
-    height: 9em;
-  }
-
-  &__image {
-      width: 50%;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-  }
-
 }
 
 /* localisation */
@@ -106,6 +101,9 @@ body {
   color: #000000;
   background-color: #EAEAEA;
   width: 100%;
+  @media (max-width: 768px) {
+    font-size: 6em;
+  }
   @media (max-width: 375px) {
     height: 3em;
     font-size: 50px;
@@ -127,10 +125,11 @@ body {
   @media (max-width: 768px) {
     width: 87em;
     flex-direction: column;
+    font-size: 35px;
   }
   @media (max-width: 375px) {
-    font-size: 30px;
-    width: 48em;
+    font-size: 37px;
+    width: 41em;
   }
 
 
@@ -161,12 +160,17 @@ body {
   margin-bottom: 2em;
   outline: none;
   border-style: none;
+  @media (max-width: 768px) {
+    font-size: 31px;
+    width: 15em;
+    height: 3em;
+    border-radius: 50px;
+  }
   @media (max-width: 375px) {
     font-size: 25px;
     width: 351px;
     height: 100px;
     border-radius: 50px;
-
   }
   }
   &__title{
@@ -191,11 +195,13 @@ body {
   flex-direction: column;
   @media (max-width: 768px) {
     margin-left: 50px;
+    font-size: 49px;
   }
   @media (max-width: 375px) {
     display: block;
     margin-top: 10px;
     margin-left: 65px;
+
   }
   &__header{
     @media (max-width: 768px) {
@@ -211,6 +217,7 @@ body {
       margin-left: 60px;
       @media (max-width: 375px) {
         display: initial;
+        font-size: 20px;
       }
       @media (max-width: 768px) {
         width: 57em;
@@ -263,9 +270,13 @@ body {
     margin-right: 10px;
     height: 24px;
     width: 24px;
+    @media (max-width: 768px) {
+      margin-left: -92px;
+      margin-right: 87px;
+    }
     @media (max-width: 375px) {
       font-size: 37px;
-      margin-left: -50px;
+      margin-left: -55px;
     }
   }
   
@@ -278,6 +289,11 @@ body {
     margin-left: -10px;
     margin-right: 1em;
     background-color: #9356DC;
+    @media (max-width: 768px) {
+      width: 60px;
+      height: 60px;
+      margin-left: -29px;
+    }
     @media (max-width: 375px) {
       height: 50px;
       width: 50px;
@@ -288,13 +304,14 @@ body {
   .restaurants {
     background-color: #f2f2f2;
     padding: 20px 20px 40px 20px;
-    @media (max-width: 375px) {
-      font-size: large;
-    }
     @media (max-width: 768px) {
       flex-wrap: wrap;
       width: 79em;
       padding: 60px;
+      font-size: 38px;
+    }
+    @media (max-width: 375px) {
+      font-size: large;
     }
     &__header{
       @media (max-width: 768px) {
@@ -319,6 +336,9 @@ body {
     width: 61em;
     display: flex;
     margin-left: 30px;
+    @media (max-width: 768px) {
+      width: 76em;
+    }
     @media (max-width: 375px) {
       flex-direction: column;
       height: 193em;
@@ -339,12 +359,13 @@ body {
     max-width: 24%;
     margin-left: 30px;
     width: 237px;
-    @media (max-width: 375px) {
-      width: 63em;
-    }
     @media (max-width: 768px) {
       max-width: 100%;
       margin-top: 2em;
+      width: 16em;
+    }
+    @media (max-width: 375px) {
+      width: 63em;
     }
     &__image{
         height: 10em;
@@ -445,10 +466,11 @@ footer{
   color: white;
   background-color:  #353535;
   @media (max-width: 768px) {
-    width: 85em;
+    width: 191em;
+    margin-top: 88px;
   }
   @media (max-width: 375px) {
-    width: 89em;
+    width: 93em;
   }
 .logofooter{
     margin: 10px 20px;
@@ -463,6 +485,7 @@ footer{
     @media (max-width: 768px) {
       margin-left: 1em;
       display: flex;
+      align-items: center;
     }
     @media (max-width: 375px) {
       display: block;
@@ -474,7 +497,8 @@ footer{
       line-height: 30px;
       @media (max-width: 768px) {
         margin-bottom: 40px;
-        font-size: 30px;
+        font-size: 72px;
+        margin-left: 119px;
       }
       @media (max-width: 375px) {
         font-size: 45px;
@@ -493,12 +517,14 @@ footer{
       color: white;
       font-family: "Shrikhand", cursive;
       font-style: italic;
+      @media (max-width: 768px) {
+        margin-left: 16em;
+        font-size: 81px;
+      }
       @media (max-width: 375px) {
         font-size: 60px;
-      }
-      @media (max-width: 768px) {
-        margin-left: 1em;
-        font-size: 65px;
+        display: block;
+        margin-left: 3em;
       }
   }
 }
@@ -512,10 +538,10 @@ footer{
   background-color: #FFFFFF;
   padding: 3px;
   @media (max-width: 768px) {
-    width: 86em;
+    width: 191em;
  }
   @media (max-width: 375px) {
-    width: 90em;
+    width: 93em;
   }
 }
 
@@ -523,17 +549,21 @@ footer{
 .bg-image{
   height: 17em;
   @media (max-width: 768px) {
-     width: 86em;
+     width: 192em;
+     height: 36em;
   }
   @media (max-width: 375px) {
-    width: 91em;
+    width: 94em;
     height: 27em;
   }
   img{
       width: 100%;
-      height: 67em;
+      height: 66em;
+      @media (max-width: 768px) {
+        height: 93em;
+     }
       @media (max-width: 375px) {
-        height: 46em;
+        height: 93em;
       }
   }
 }
@@ -542,6 +572,7 @@ footer{
 .menu{
   position: relative;
   display: flex;
+  flex-direction: column;
   transform: translateY(-50px);
   border-radius: 42px 42px 0 0;
   background-color: #F6F6F6;
@@ -549,27 +580,28 @@ footer{
   height: 30em;
   @media (max-width: 768px) {
     flex-direction: column;
-    font-size: 30px;
-    width: 45em;
+    font-size: 39px;
+    width: 78em;
+    height: 90em;
   }
   @media (max-width: 375px) {
-    width: 47em;
+    width: 38em;
+    height: 90em;
   }
-  .name{
-      display: flex;
-      align-items: center;
-      margin-bottom: 30px;
-      @media (max-width: 768px) {
-        font-size: 25px;
-        margin-left: 30px;
-        margin-right: 12em;
-      }
-  }
-  &-choice{
-      display: flex;
+  .carte {
+    display: flex;
+    @media (max-width: 768px) {
       flex-direction: column;
+    }
+    @media (max-width: 375px) {
+      flex-direction: column;
+    }
+    &-choice {
+      display: flex;
       margin-bottom: 2em;
-      margin-left: 25px;
+      margin-top: 2em;
+      margin-left: 82px;
+      flex-direction: column;
       @media (max-width: 768px) {
         font-size: 35px;
         margin-right: 20px;
@@ -588,10 +620,12 @@ footer{
       height: 23px;
       margin-right: 30px;
       @media (max-width: 768px) {
-        font-size: 26px;
-        width: 110px;
-        height: 33px;
+        font-size: 53px;
+        width: 163px;
+        height: 69px;
+        margin-bottom: 27px;
       }
+    }
   }
 }
 
@@ -615,7 +649,7 @@ h5{
       text-overflow: ellipsis;
       overflow: hidden;
       @media (max-width: 768px) {
-        font-size: 34px;
+        font-size: 55px;
       }
   }
   h5{
@@ -644,6 +678,9 @@ h5{
       margin-bottom: 1px;
       text-overflow: ellipsis;
       overflow: hidden;
+      @media (max-width: 768px) {
+        font-size: 65px;
+      }
   }
   &__top{
       flex: 1;
@@ -658,6 +695,9 @@ h5{
   justify-content: flex-end;
   align-items: flex-end;
   padding-left: .5rem;
+  @media (max-width: 768px) {
+    font-size: 2em;
+  }
   }
   &__conf{
       background-color: #99E2D0;
@@ -679,20 +719,30 @@ h5{
   margin-right: -1rem;
   height: 83px;
   @media (max-width: 768px) {
-    height: 152px;
+    height: 11em;
+    width: 8em;
   }
 }
 
 .plat--1{
   animation-delay: 0s;
+  @media (max-width: 768px) {
+    height: 10em;
+  }
 }
 
 .plat--2{
   animation-delay: 0.3s;
+  @media (max-width: 768px) {
+    height: 10em;
+  }
 }
 
 .plat--3{
   animation-delay: 0.6s;
+  @media (max-width: 768px) {
+    height: 10em;
+  }
 }
 
 .favorite{
@@ -715,6 +765,9 @@ h5{
 
 .plat:hover .icon--bg {
   transform: rotate(0);
+  @media (max-width: 768px) {
+    font-size: 2.5em;
+  }
 }
 
 .fa-check{
@@ -727,7 +780,7 @@ h5{
   display: flex;
   margin-left: 17px;
   @media (max-width: 768px) {
-    font-size: 3em;
+    font-size: 6em;
   }
   i{
       color: black;
@@ -743,9 +796,10 @@ h5{
     margin-bottom: 70px;
     margin-top: 73em;
     margin-left: 114px;
+    width: 177em;
   }
   @media (max-width: 375px) {
-    margin-left: 13em;
+    width: 79em;
   }
 }
 
@@ -788,7 +842,7 @@ h5{
 }
 
 .favorite{
-  height: 2rem;
+  height: 3rem;
   width: 3rem;
   background-color: transparent;
   padding: 0;
@@ -796,16 +850,16 @@ h5{
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  position: relative;
+  position: absolute;
   background-color: #000;
   border-style: none;
   outline: none;
-  margin-left: 15px;
+  margin-left: 12em;
   @media (max-width: 768px) {
-    font-size: 2em;
+    font-size: 61px;
     margin-right: 50px;
-    width: 70px;
-    height: 70px;
+    width: 94px;
+    height: 103px;
   }
 }
 
