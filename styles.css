@@ -762,7 +762,6 @@ footer {
 }
 
 footer .logofooter {
-  margin: 10px 65px;
   color: white;
   width: 100px;
   font-family: "Shrikhand", cursive;
@@ -770,7 +769,7 @@ footer .logofooter {
 }
 
 footer ul {
-  margin-left: 21em;
+  margin-left: 17em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -499,14 +499,13 @@ footer{
     width: 93em;
   }
 .logofooter{
-    margin: 10px 65px;
     color: white;
     width: 100px;
     font-family: "Shrikhand", cursive;
     font-style: italic;
 }
   ul{
-    margin-left: 21em;
+    margin-left: 17em;
     display: flex;
     @media (max-width: 768px) {
       margin-left: 1em;
