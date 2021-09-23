@@ -5,7 +5,6 @@ body {
     margin: auto;
     color: #000000;
     background-color: #F6F6F6;
-    width: 100%;
   }
   
 /*loader*/
@@ -65,12 +64,8 @@ body {
   display: flex;
   align-items: center;
   background-color: #FFFFFF;
-  @media (max-width: 768px) {
-    width: 100%;
-  }
   @media (max-width: 375px) {
     flex-direction: column;
-    width: 100%;
   }
   .logo{
       box-shadow: 0 0 0.5rem rgba(0,0,0,0.20);
@@ -81,11 +76,7 @@ body {
       align-items: center;
       z-index: 1;
       @media (max-width: 768px) {
-        width: 100%;
         height: 6rem;
-      }
-      @media (max-width: 375px) {
-        width: 100%;
       }
       &__image {
         width: 50%;
@@ -107,7 +98,7 @@ body {
   background-color: #EAEAEA;
   width: 100%;
   @media (max-width: 768px) {
-    font-size: 2rem;
+    height: 6rem;
   }
   i{
       margin-right: 1em;
@@ -123,34 +114,13 @@ body {
   padding: 10px 0px 10px 0px;
   @media (max-width: 768px) {
     flex-direction: column;
-    font-size: 1rem;
-    width: 100%;
   }
-  @media (max-width: 375px) {
-    width: 100%;
-  }
-
-
   h2{
       text-align: center;
-      @media (max-width: 768px) {
-        font-size: 3rem;
-      }
-      @media (max-width: 375px) {
-        font-size: 2rem;
-        width: 80%;
-      }
-
   }
 
   p{
       margin: -6px 0px 31px 0px;
-      @media (max-width: 768px) {
-        font-size: 2rem;
-      }
-      @media (max-width: 375px) {
-        font-size: 1.5em;
-      }
   }
 
   &__button{
@@ -168,18 +138,6 @@ body {
   margin-bottom: 2em;
   outline: none;
   border-style: none;
-  @media (max-width: 768px) {
-    font-size: 1rem;
-    width: 31%;
-    height: 4rem;
-    border-radius: 50px;
-    margin-top: 31px;
-  }
-  @media (max-width: 375px) {
-    width: 63%;
-    height: 5rem;
-    border-radius: 100px;
-  }
   }
   &__title{
       text-align: center;
@@ -200,13 +158,14 @@ body {
   padding: 20px 20px 40px 20px;
   display: flex;
   margin-top: 35px;
-  flex-direction: column;
   @media (max-width: 768px) {
-    margin-left: 20px;
+    margin-left: 3rem;
+    flex-direction: column;
   }
   @media (max-width: 375px) {
     display: block;
     margin-top: 10px;
+    margin-left: 0rem;
   }
   &__choice{
       width: 80%;
@@ -320,8 +279,7 @@ body {
       height: 100%;
     }
     @media (max-width: 375px) {
-      margin-left: -1rem;
-      display: flex;
+      margin-left: -2rem;
       flex-direction: column;
     }
   }
@@ -342,12 +300,8 @@ body {
     @media (max-width: 768px) {
       max-width: 41%;
       width: 100%;
-      height: 36%;
-      margin-left: 1rem;
     }
     @media (max-width: 375px) {
-      width: 90%;
-      height: 21%;
       max-width: 100%;
     }
     &__image{
@@ -434,12 +388,6 @@ footer{
   padding: 1em;
   color: white;
   background-color:  #353535;
-  @media (max-width: 768px) {
-    width: 97%;
-  }
-  @media (max-width: 375px) {
-    width: 100%;
-  }
 .logofooter{
     color: white;
     width: 100px;
@@ -497,25 +445,15 @@ footer{
   align-items: center;
   background-color: #FFFFFF;
   padding: 3px;
-  @media (max-width: 768px) {
-    width: 100%;
- }
-  @media (max-width: 375px) {
-    width: 100%;
-  }
   .logo{
     margin-left: 28em;
     @media (max-width: 768px) {
         margin-left: 9rem;
     }
-    @media (max-width: 375px) {
-      margin-left: 2rem;
-    }
     &__image{
       @media (max-width: 375px) {
-        width: 69%;
-        margin-top: 1rem;
-        margin-left: 1rem;
+        width: 100%;
+        margin-left: -5rem;
       }
     }
   }
@@ -524,13 +462,6 @@ footer{
   /*image restaurant*/
 .bg-image{
   height: 17em;
-  @media (max-width: 768px) {
-     width: 100%;
-     height: 42%;
-  }
-  @media (max-width: 375px) {
-    width: 100%;
-  }
   img{
       width: 100%;
       height: 71em;
@@ -552,12 +483,10 @@ footer{
   height: 36em;
   @media (max-width: 768px) {
     flex-direction: column;
-    font-size: 39px;
-    width: 95%;
-    height: 90%;
+    margin-bottom: 72rem;
   }
   @media (max-width: 375px) {
-    height: 88rem;
+    margin-bottom: 41rem;
   }
   .carte {
     display: flex;
@@ -572,13 +501,9 @@ footer{
       flex-direction: column;
       width: 23em;
       @media (max-width: 768px) {
-        width: 96%;
-        margin-left: 1rem;
+        width: 100%;
+        margin-left: 0rem;
         margin-bottom: 0rem;
-      }
-      @media (max-width: 375px) {
-        margin-left: 0px;
-        margin-bottom: -4rem;
       }
   }
   &-type{
@@ -804,7 +729,6 @@ h5{
   }
   @media (max-width: 375px) {
     font-size: 2rem;
-    margin-bottom: -1rem;
   }
   i{
       color: black;
@@ -814,44 +738,22 @@ h5{
 .button-container{
   display: flex;
   justify-content: center;
-  margin-top: -128px;
-  margin-bottom: 90px;
   @media (max-width: 768px) {
-    margin-bottom: 3rem;
-    margin-top: 60rem;
-    margin-left: 5rem;
-    width: 80%;
-  }
-  @media (max-width: 375px) {
-    width: 100%;
-    margin-top: 10rem;
-    margin-left: -1rem;
-    margin-bottom: -7rem;
+    margin-top: 2rem;
   }
 }
 
 .button1{
-  position: relative;
-  z-index: 1;
-  width: 220px;
-  height: 50px;
+  width: 32%;
+  height: 4rem;
   color: #000000;
   color: #FFFFFF;
   border-radius: 50px;
   border-style: hidden;
   outline: none;
   background: linear-gradient(180deg,#FF79DA 15%, #9356DC 85%);
-  @media (max-width: 768px) {
-    font-size: 30px;
-    width: 74%;
-    height: 10rem;
-    border-radius: 100px;
-    margin-bottom: 90px;
-  }
   @media (max-width: 375px) {
-    font-size: 1rem;
-    height: 4rem;
-    width: 47%;
+    width: 55%;
   }
   &:hover{
       &::after{
@@ -866,7 +768,6 @@ h5{
   bottom: 0;
   left: 0;
   border-radius: 30px;
-  background: linear-gradient(180deg,#9356DC 15%, #FF79DA 85%);
   opacity: 0;
   z-index: -1;
   transition: opacity 250ms;
@@ -891,6 +792,7 @@ h5{
     margin-left: 33rem;
     height: 4rem;
     width: 12%;
+    font-size: 4rem;
   }
   @media (max-width: 375px) {
     margin-left: 20rem;
