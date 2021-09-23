@@ -5,6 +5,7 @@ body {
     margin: auto;
     color: #000000;
     background-color: #F6F6F6;
+    width: 100%;
   }
   
 /*loader*/
@@ -22,6 +23,14 @@ body {
   display:flex;
   align-items:center;
   justify-content:center;
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 100%;
+  }
+  @media (max-width: 375px) {
+    width: 100%;
+    height: 100%;
+  }
 
   &__item {
     height: 1rem;
@@ -32,7 +41,7 @@ body {
 
     &Container {
       display: flex;
-      width: 5rem;
+      width: 8%;
       justify-content: space-between;
     }
     &--1 {
@@ -57,11 +66,11 @@ body {
   align-items: center;
   background-color: #FFFFFF;
   @media (max-width: 768px) {
-    width: 191em;
+    width: 100%;
   }
   @media (max-width: 375px) {
     flex-direction: column;
-    width: 93em;
+    width: 100%;
   }
   .logo{
       box-shadow: 0 0 0.5rem rgba(0,0,0,0.20);
@@ -72,12 +81,11 @@ body {
       align-items: center;
       z-index: 1;
       @media (max-width: 768px) {
-        width: 167em;
-        height: 20em;
+        width: 100%;
+        height: 6rem;
       }
       @media (max-width: 375px) {
-        width: 95em;
-        height: 13em;
+        width: 100%;
       }
       &__image {
         width: 50%;
@@ -99,14 +107,8 @@ body {
   background-color: #EAEAEA;
   width: 100%;
   @media (max-width: 768px) {
-    font-size: 6em;
+    font-size: 2rem;
   }
-  @media (max-width: 375px) {
-    height: 3em;
-    font-size: 50px;
-    width: 30em;
-  }
-
   i{
       margin-right: 1em;
   }
@@ -120,26 +122,23 @@ body {
   background-color: #f2f2f2;
   padding: 10px 0px 10px 0px;
   @media (max-width: 768px) {
-    width: 87em;
     flex-direction: column;
-    font-size: 35px;
-    height: 20em;
+    font-size: 1rem;
+    width: 100%;
   }
   @media (max-width: 375px) {
-    font-size: 18px;
-    width: 83em;
-    height: 55em;
+    width: 100%;
   }
 
 
   h2{
       text-align: center;
       @media (max-width: 768px) {
-        font-size: 3em;
+        font-size: 3rem;
       }
       @media (max-width: 375px) {
-        width: 12em;
-        font-size: 5em;
+        font-size: 2rem;
+        width: 80%;
       }
 
   }
@@ -147,10 +146,10 @@ body {
   p{
       margin: -6px 0px 31px 0px;
       @media (max-width: 768px) {
-        font-size: 2em;
+        font-size: 2rem;
       }
       @media (max-width: 375px) {
-        font-size: 3em;
+        font-size: 1.5em;
       }
   }
 
@@ -170,17 +169,15 @@ body {
   outline: none;
   border-style: none;
   @media (max-width: 768px) {
-    font-size: 41px;
-    width: 14em;
-    height: 170px;
+    font-size: 1rem;
+    width: 31%;
+    height: 4rem;
     border-radius: 50px;
     margin-top: 31px;
   }
   @media (max-width: 375px) {
-    font-size: 38px;
-    width: 19em;
-    height: 5em;
-    margin-top: 4em;
+    width: 63%;
+    height: 5rem;
     border-radius: 100px;
   }
   }
@@ -205,35 +202,21 @@ body {
   margin-top: 35px;
   flex-direction: column;
   @media (max-width: 768px) {
-    margin-left: 50px;
-    font-size: 49px;
-    margin-bottom: 134px;
+    margin-left: 20px;
   }
   @media (max-width: 375px) {
     display: block;
     margin-top: 10px;
-    margin-left: 65px;
-
-  }
-  &__header{
-    @media (max-width: 768px) {
-      font-size: 2em;
-    }
-    @media (max-width: 375px) {
-      font-size: 2em;
-    }
   }
   &__choice{
       width: 80%;
       display: flex;
       margin-left: 60px;
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
       @media (max-width: 375px) {
         display: initial;
-        font-size: 20px;
-      }
-      @media (max-width: 768px) {
-        width: 57em;
-        margin-left: 10px;
       }
   }
   &__container{
@@ -249,8 +232,7 @@ body {
       height: 4em;
       box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.20);
       @media (max-width: 375px) {
-        width: 68em;
-        height: 13em;
+        width: 100%;
         border-radius: 50px;
       }
       &:hover{
@@ -259,17 +241,14 @@ body {
       i{
       margin-right: 24px;
       @media (max-width: 375px) {
-        margin-right: 24px;
-        margin-left: 55px;
-        font-size: 44px;
+        margin-left: -16px;
       }
     }  
   }
 }
 .steps__text{
   @media (max-width: 375px) {
-    font-size: 40px;
-    margin-left: 56px;
+    
   }
 }
 
@@ -283,12 +262,11 @@ body {
     height: 24px;
     width: 24px;
     @media (max-width: 768px) {
-      margin-left: -92px;
-      margin-right: 87px;
+      margin-right: 42px;
+      margin-left: -37px;
     }
     @media (max-width: 375px) {
-      font-size: 37px;
-      margin-left: -55px;
+      margin-left: -36px;
     }
   }
   
@@ -302,13 +280,12 @@ body {
     margin-right: 1em;
     background-color: #9356DC;
     @media (max-width: 768px) {
-      width: 60px;
-      height: 60px;
-      margin-left: -29px;
+      width: 10%;
+      height: 48%;
+      margin-left: -15px;
     }
     @media (max-width: 375px) {
-      height: 50px;
-      width: 50px;
+      width: 10%;
     }
   }
   /*Restaurants*/
@@ -318,23 +295,10 @@ body {
     padding: 20px 20px 40px 20px;
     @media (max-width: 768px) {
       flex-wrap: wrap;
-      width: 79em;
-      padding: 60px;
-      font-size: 38px;
+      width: 94%;
     }
     @media (max-width: 375px) {
-      font-size: large;
-    }
-    &__header{
-      @media (max-width: 768px) {
-        font-size: 2em;
-        margin-right: 30em;
-        margin-bottom: 64px;
-      }
-      @media (max-width: 375px) {
-        font-size: 5em;
-        margin-left: 30px;
-      }
+      width: 89%;
     }
     h2 {
       margin-right: 20px;
@@ -351,13 +315,14 @@ body {
     margin-left: 30px;
     @media (max-width: 768px) {
       width: 100%;
-      margin-bottom: 5em;
       display: flex;
       flex-wrap: wrap;
-      height: 42em;
+      height: 100%;
     }
     @media (max-width: 375px) {
-      height: 204em;
+      margin-left: -1rem;
+      display: flex;
+      flex-direction: column;
     }
   }
   
@@ -375,14 +340,15 @@ body {
     margin-left: 30px;
     width: 237px;
     @media (max-width: 768px) {
-      max-width: 108%;
-      margin-top: 2em;
-      width: 35em;
-      height: 20em;
+      max-width: 41%;
+      width: 100%;
+      height: 36%;
+      margin-left: 1rem;
     }
     @media (max-width: 375px) {
-      width: 75em;
-      height: 49em;
+      width: 90%;
+      height: 21%;
+      max-width: 100%;
     }
     &__image{
         height: 10em;
@@ -392,20 +358,11 @@ body {
         box-sizing: content-box;
         border-top-left-radius: 10px;
         border-top-right-radius:10px ;
-        @media (max-width: 768px) {
-          height: 15em;
-        }
-        @media (max-width: 375px) {
-          height: 34em;
-        }
     }
     &__top{
         box-sizing: border-box;
         height: 100%;
         position: relative;
-        @media (max-width: 375px) {
-          height: 36em;
-        }
     }
     &__new{
         position: absolute;
@@ -418,12 +375,12 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        @media (max-width: 768px) {
+          width: 28%;
+          height: 18%;
+        }
         @media (max-width: 375px) {
-          height: 75px;
-          width: 152px;
-          font-size: 25px;
-          margin-right: 10px;
-          margin-top: 20px;
+          margin-top: 12px;
         }
     }
     &__bottom{
@@ -431,14 +388,6 @@ body {
         flex-direction: column;
         position: relative;
         margin: 10px;
-        @media (max-width: 768px) {
-          font-size: 54px;
-        }
-        @media (max-width: 375px) {
-          font-size: 42px;
-          margin-left: 30px;
-          margin-bottom: 12px;
-        }
         p{
             color: black;
             font-weight: 300;
@@ -454,15 +403,9 @@ body {
             width: 20%;
             height: 100%;
             font-size: x-large;
-            @media (max-width: 375px) {
-              font-size: 65px;
-            }
             .fa-heart{
               font-size: 26px;
               opacity: 1;
-              @media (max-width: 768px) {
-                font-size: 90px;
-              }
               @media (max-width: 375px) {
                 font-size: 1em;
               }
@@ -492,11 +435,10 @@ footer{
   color: white;
   background-color:  #353535;
   @media (max-width: 768px) {
-    width: 191em;
-    margin-top: 88px;
+    width: 97%;
   }
   @media (max-width: 375px) {
-    width: 93em;
+    width: 100%;
   }
 .logofooter{
     color: white;
@@ -508,12 +450,13 @@ footer{
     margin-left: 17em;
     display: flex;
     @media (max-width: 768px) {
-      margin-left: 1em;
+      margin-left: 0rem;
       display: flex;
       align-items: center;
     }
     @media (max-width: 375px) {
       display: block;
+      margin-left: -3rem;
     }
   }
   li{
@@ -521,12 +464,7 @@ footer{
       list-style: none;
       line-height: 30px;
       @media (max-width: 768px) {
-        margin-bottom: 40px;
-        font-size: 72px;
-        margin-left: 119px;
-      }
-      @media (max-width: 375px) {
-        font-size: 45px;
+        margin-left: 1rem;
       }
       a{
           color: white;
@@ -543,13 +481,10 @@ footer{
       font-family: "Shrikhand", cursive;
       font-style: italic;
       @media (max-width: 768px) {
-        margin-left: 16em;
-        font-size: 81px;
+        margin-left: 19rem;
       }
       @media (max-width: 375px) {
-        font-size: 60px;
-        display: block;
-        margin-left: 3em;
+        margin-left: 1rem;
       }
   }
 }
@@ -563,25 +498,26 @@ footer{
   background-color: #FFFFFF;
   padding: 3px;
   @media (max-width: 768px) {
-    width: 191em;
-    height: 16em;
+    width: 100%;
  }
   @media (max-width: 375px) {
-    width: 93em;
+    width: 100%;
   }
   .logo{
     margin-left: 28em;
     @media (max-width: 768px) {
-        margin-left: 54em;
+        margin-left: 9rem;
     }
     @media (max-width: 375px) {
-      margin-left: 8em;
+      margin-left: 2rem;
     }
-      &__image{
-        @media (max-width: 768px) {
-            height: 12em;
-        }
+    &__image{
+      @media (max-width: 375px) {
+        width: 69%;
+        margin-top: 1rem;
+        margin-left: 1rem;
       }
+    }
   }
 }
 
@@ -589,22 +525,18 @@ footer{
 .bg-image{
   height: 17em;
   @media (max-width: 768px) {
-     width: 192em;
-     height: 36em;
+     width: 100%;
+     height: 42%;
   }
   @media (max-width: 375px) {
-    width: 94em;
-    height: 27em;
+    width: 100%;
   }
   img{
       width: 100%;
       height: 71em;
       @media (max-width: 768px) {
-        height: 93em;
+        height: 31rem;
      }
-      @media (max-width: 375px) {
-        height: 93em;
-      }
   }
 }
 /*menu*/
@@ -621,19 +553,15 @@ footer{
   @media (max-width: 768px) {
     flex-direction: column;
     font-size: 39px;
-    width: 78em;
-    height: 90em;
+    width: 95%;
+    height: 90%;
   }
   @media (max-width: 375px) {
-    width: 38em;
-    height: 90em;
+    height: 88rem;
   }
   .carte {
     display: flex;
     @media (max-width: 768px) {
-      flex-direction: column;
-    }
-    @media (max-width: 375px) {
       flex-direction: column;
     }
     &-choice {
@@ -644,13 +572,13 @@ footer{
       flex-direction: column;
       width: 23em;
       @media (max-width: 768px) {
-        font-size: 35px;
-        margin-right: 20px;
-        width: 84em;
+        width: 96%;
+        margin-left: 1rem;
+        margin-bottom: 0rem;
       }
       @media (max-width: 375px) {
         margin-left: 0px;
-        width: 42em;
+        margin-bottom: -4rem;
       }
   }
   &-type{
@@ -663,10 +591,14 @@ footer{
       height: 23px;
       margin-right: 30px;
       @media (max-width: 768px) {
-        font-size: 53px;
-        width: 163px;
-        height: 69px;
-        margin-bottom: 27px;
+        font-size: 2rem;
+        width: 10%;
+        height: 100%;
+        margin-bottom: 2rem;
+      }
+      @media (max-width: 375px) {
+        font-size: 1rem;
+        margin-bottom: 1rem;
       }
     }
   }
@@ -680,6 +612,12 @@ h5{
   margin: 0;
   text-align: left;
   color: #000000;
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
+  @media (max-width: 375px) {
+    font-size: 2rem;
+  }
 }
 
 /*Plats*/
@@ -692,7 +630,10 @@ h5{
       text-overflow: ellipsis;
       overflow: hidden;
       @media (max-width: 768px) {
-        font-size: 55px;
+        font-size: 1.5rem;
+      }
+      @media (max-width: 375px) {
+        font-size: 0.85rem;
       }
   }
   h5{
@@ -722,7 +663,10 @@ h5{
       text-overflow: ellipsis;
       overflow: hidden;
       @media (max-width: 768px) {
-        font-size: 65px;
+        font-size: 2rem;
+      }
+      @media (max-width: 375px) {
+        font-size: 1rem;
       }
   }
   &__top{
@@ -730,6 +674,9 @@ h5{
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
+      @media (max-width: 375px) {
+        align-self: self-end;
+      }
   }
   &__price{
   margin-bottom: -20px;
@@ -739,9 +686,12 @@ h5{
   align-items: flex-end;
   padding-left: .5rem;
   @media (max-width: 768px) {
-    font-size: 2em;
+    font-size: 2rem;
   }
+  @media (max-width: 375px) {
+    font-size: 1.5rem;
   }
+}
   &__conf{
       background-color: #99E2D0;
       margin: -1rem -5rem -1rem 1rem;
@@ -754,7 +704,12 @@ h5{
       @media (max-width: 768px) {
         margin-right: -10rem;
         height: 167px;
-        width: 125px;
+        width: 18%;
+      }
+      @media (max-width: 375px) {
+        height: 5rem;
+        width: 22%;
+        margin-right: -6rem;
       }
   }
 }
@@ -762,30 +717,51 @@ h5{
   margin-right: -1rem;
   height: 83px;
   @media (max-width: 768px) {
-    height: 11em;
-    width: 8em;
+    height: 11rem;
+    width: 22%;
+  }
+  @media (max-width: 375px) {
+    height: 6rem;
   }
 }
 
 .plat--1{
   animation-delay: 0s;
   @media (max-width: 768px) {
-    height: 10em;
+    height: 6rem;
+  }
+  @media (max-width: 375px) {
+    height: 3rem;
   }
 }
 
 .plat--2{
   animation-delay: 0.3s;
   @media (max-width: 768px) {
-    height: 10em;
+    height: 6rem;
+  }
+  @media (max-width: 375px) {
+    height: 3rem;
   }
 }
 
 .plat--3{
   animation-delay: 0.6s;
   @media (max-width: 768px) {
-    height: 10em;
+    height: 6rem;
+  @media (max-width: 375px) {
+    height: 3rem;
   }
+}
+.plat--4{
+  animation-delay: 0.6s;
+  @media (max-width: 768px) {
+    height: 6rem;
+  @media (max-width: 375px) {
+    height: 3rem;
+  }
+}
+}  
 }
 
 .favorite{
@@ -808,8 +784,8 @@ h5{
 
 .plat:hover .icon--bg {
   transform: rotate(0);
-  @media (max-width: 768px) {
-    font-size: 2.5em;
+  @media (max-width: 375px) {
+    font-size: 1rem;
   }
 }
 
@@ -824,7 +800,11 @@ h5{
   margin-left: 17px;
   font-size: 2em;
   @media (max-width: 768px) {
-    font-size: 6em;
+    font-size: 4rem;
+  }
+  @media (max-width: 375px) {
+    font-size: 2rem;
+    margin-bottom: -1rem;
   }
   i{
       color: black;
@@ -837,13 +817,16 @@ h5{
   margin-top: -128px;
   margin-bottom: 90px;
   @media (max-width: 768px) {
-    margin-bottom: 70px;
-    margin-top: 73em;
-    margin-left: 114px;
-    width: 177em;
+    margin-bottom: 3rem;
+    margin-top: 60rem;
+    margin-left: 5rem;
+    width: 80%;
   }
   @media (max-width: 375px) {
-    width: 79em;
+    width: 100%;
+    margin-top: 10rem;
+    margin-left: -1rem;
+    margin-bottom: -7rem;
   }
 }
 
@@ -859,11 +842,16 @@ h5{
   outline: none;
   background: linear-gradient(180deg,#FF79DA 15%, #9356DC 85%);
   @media (max-width: 768px) {
-    font-size: 44px;
-    width: 19em;
-    height: 5em;
+    font-size: 30px;
+    width: 74%;
+    height: 10rem;
     border-radius: 100px;
     margin-bottom: 90px;
+  }
+  @media (max-width: 375px) {
+    font-size: 1rem;
+    height: 4rem;
+    width: 47%;
   }
   &:hover{
       &::after{
@@ -900,10 +888,14 @@ h5{
   outline: none;
   margin-left: 12em;
   @media (max-width: 768px) {
-    font-size: 61px;
-    margin-right: 50px;
-    width: 94px;
-    height: 103px;
+    margin-left: 33rem;
+    height: 4rem;
+    width: 12%;
+  }
+  @media (max-width: 375px) {
+    margin-left: 20rem;
+    font-size: 2rem;
+    height: 3rem;
   }
 }
 
