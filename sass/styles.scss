@@ -483,10 +483,11 @@ footer{
   height: 36em;
   @media (max-width: 768px) {
     flex-direction: column;
-    margin-bottom: 72rem;
+    height: 113rem;
   }
   @media (max-width: 375px) {
     margin-bottom: 41rem;
+    height: 33rem;
   }
   .carte {
     display: flex;
@@ -612,9 +613,11 @@ h5{
   padding-left: .5rem;
   @media (max-width: 768px) {
     font-size: 2rem;
+    margin-right: 2rem;
   }
   @media (max-width: 375px) {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    margin-right: 0rem;
   }
 }
   &__conf{
@@ -677,6 +680,7 @@ h5{
   @media (max-width: 375px) {
     height: 3rem;
   }
+}  
 }
 .plat--4{
   animation-delay: 0.6s;
@@ -686,7 +690,6 @@ h5{
     height: 3rem;
   }
 }
-}  
 }
 
 .favorite{
@@ -739,7 +742,7 @@ h5{
   display: flex;
   justify-content: center;
   @media (max-width: 768px) {
-    margin-top: 2rem;
+    margin-bottom: 3rem;
   }
 }
 
