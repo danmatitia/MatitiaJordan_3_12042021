@@ -480,14 +480,14 @@ footer{
   border-radius: 42px 42px 0 0;
   background-color: #F6F6F6;
   padding: 35px 20px;
-  height: 35em;
+  height: 37em;
   @media (max-width: 768px) {
     flex-direction: column;
     height: 113rem;
   }
   @media (max-width: 375px) {
     margin-bottom: 41rem;
-    height: 33rem;
+    height: 40rem;
   }
   .carte {
     display: flex;
@@ -742,7 +742,10 @@ h5{
   display: flex;
   justify-content: center;
   @media (max-width: 768px) {
-    margin-bottom: 3rem;
+    margin-top: 2rem;
+  }
+  @media (max-width: 375px) {
+    margin-top: 3rem;
   }
 }
 

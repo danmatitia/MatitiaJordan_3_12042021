@@ -737,7 +737,7 @@ footer h2 {
   border-radius: 42px 42px 0 0;
   background-color: #F6F6F6;
   padding: 35px 20px;
-  height: 35em;
+  height: 37em;
 }
 
 @media (max-width: 768px) {
@@ -753,7 +753,7 @@ footer h2 {
 @media (max-width: 375px) {
   .menu {
     margin-bottom: 41rem;
-    height: 33rem;
+    height: 40rem;
   }
 }
 
@@ -1156,7 +1156,13 @@ h5 {
 
 @media (max-width: 768px) {
   .button-container {
-    margin-bottom: 3rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .button-container {
+    margin-top: 3rem;
   }
 }
 
