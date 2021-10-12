@@ -22,14 +22,6 @@ body {
   display:flex;
   align-items:center;
   justify-content:center;
-  @media (max-width: 768px) {
-    width: 100%;
-    height: 100%;
-  }
-  @media (max-width: 375px) {
-    width: 100%;
-    height: 100%;
-  }
 
   &__item {
     height: 1rem;
@@ -159,7 +151,6 @@ body {
   display: flex;
   margin-top: 35px;
   @media (max-width: 768px) {
-    margin-left: 3rem;
     flex-direction: column;
   }
   @media (max-width: 375px) {
@@ -252,35 +243,18 @@ body {
   .restaurants {
     background-color: #f2f2f2;
     padding: 20px 20px 40px 20px;
-    @media (max-width: 768px) {
-      flex-wrap: wrap;
-      width: 94%;
-    }
-    @media (max-width: 375px) {
-      width: 89%;
-    }
-    h2 {
-      margin-right: 20px;
-      @media (max-width: 768px) {
-        margin-right: 30em;
-      }
-    }
   }
 
   .restocard{
-    height: 14em;
-    width: 67em;
     display: flex;
-    margin-left: 30px;
     @media (max-width: 768px) {
-      width: 100%;
       display: flex;
       flex-wrap: wrap;
-      height: 100%;
+      flex-direction: row;
+      justify-content: space-around;
     }
     @media (max-width: 375px) {
       margin-left: -2rem;
-      flex-direction: column;
     }
   }
   
@@ -288,24 +262,22 @@ body {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    height: 100%;
     border-radius: 10px;
     margin-bottom: 1em;
     background-color: white;
     overflow: hidden;
     text-decoration: none;
-    max-width: 24%;
-    margin-left: 30px;
-    width: 237px;
+    margin-left: 15px;
+    width: 100%;
     @media (max-width: 768px) {
-      max-width: 41%;
-      width: 100%;
+      width: 41%;
     }
     @media (max-width: 375px) {
-      max-width: 100%;
+      margin-left: 30px;
+      width: 100%;
     }
     &__image{
-        height: 10em;
+        height: 12em;
         max-width: 100%;
         width: 100%;
         object-fit: cover;
@@ -315,7 +287,6 @@ body {
     }
     &__top{
         box-sizing: border-box;
-        height: 100%;
         position: relative;
     }
     &__new{
@@ -324,8 +295,8 @@ body {
         right: 16px;
         color: #278870;
         background-color: #99E2D0;
-        width: 82px;
-        height: 36px;
+        width: 38%;
+        height: 24%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -371,15 +342,14 @@ body {
         margin-top: 4px;
     }
 
-    .fa-plein-acceuil{
-      transform: translateX(-2px);
-      }
+    .fa-heart{
       &:hover{
         opacity: 1;
         color: #E47AF6;
-        transition-duration: 2.5s;
+        transition-duration: 0.5s;
       }
     }
+  }
 
 
 /*footer*/ 
@@ -393,10 +363,15 @@ footer{
     width: 100px;
     font-family: "Shrikhand", cursive;
     font-style: italic;
+    margin: auto;
+    text-align: center;
+    @media (max-width: 375px) {
+    margin-left: 13px;
+  }
 }
   ul{
-    margin-left: 17em;
     display: flex;
+    place-content: center;
     @media (max-width: 768px) {
       margin-left: 0rem;
       display: flex;
@@ -404,7 +379,7 @@ footer{
     }
     @media (max-width: 375px) {
       display: block;
-      margin-left: -3rem;
+      margin-left: -35px;
     }
   }
   li{
@@ -422,19 +397,6 @@ footer{
           }
       }
   }
-  h2{
-      margin-left: 17em;
-      font-size: 2em;
-      color: white;
-      font-family: "Shrikhand", cursive;
-      font-style: italic;
-      @media (max-width: 768px) {
-        margin-left: 19rem;
-      }
-      @media (max-width: 375px) {
-        margin-left: 1rem;
-      }
-  }
 }
 
 
@@ -446,7 +408,9 @@ footer{
   background-color: #FFFFFF;
   padding: 3px;
   .logo{
-    margin-left: 28em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     @media (max-width: 768px) {
         margin-left: 9rem;
     }
@@ -461,19 +425,26 @@ footer{
 
   /*image restaurant*/
 .bg-image{
-  height: 17em;
+  height: 30em;
+  @media (max-width: 375px) {
+    height: 17rem;
+}
   img{
       width: 100%;
-      height: 72em;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
       @media (max-width: 768px) {
         height: 31rem;
      }
+     @media (max-width: 375px) {
+        height: 20rem;
+    }
   }
 }
 /*menu*/
 
 .menu{
-  position: relative;
   display: flex;
   flex-direction: column;
   transform: translateY(-50px);
@@ -489,10 +460,37 @@ footer{
     margin-bottom: 41rem;
     height: 40rem;
   }
+  span{
+    position: absolute;
+    margin-left: 385px;
+    margin-top: 9px;
+    font-size: 23px;
+    cursor: pointer;
+    @media (max-width: 768px) {
+      margin-left: 457px;
+      margin-top: 17px;
+    }
+    @media (max-width: 375px) {
+      margin-left: 276px;
+      margin-top: 10px;
+    }
+    .fa-heart{
+      &:hover{
+        opacity: 1;
+        color: #E47AF6;
+        transition-duration: 0.5s;
+      }
+    }
+  }
   .carte {
     display: flex;
+    width: 90%;
     @media (max-width: 768px) {
       flex-direction: column;
+      align-self: center;
+    }
+    @media (max-width: 375px) {
+      width: 100%;
     }
     &-choice {
       display: flex;
@@ -500,7 +498,7 @@ footer{
       margin-top: 2em;
       margin-left: 67px;
       flex-direction: column;
-      width: 23em;
+      width: 27%;
       @media (max-width: 768px) {
         width: 100%;
         margin-left: 0rem;
@@ -511,10 +509,9 @@ footer{
       margin-left: 10px;
       font-weight: 200;
       font-size: 1rem;
-      border-bottom-style: groove;
+      border-bottom-style: groove; 
       border-bottom-color: #99E2D0;
-      width: 35px;
-      height: 23px;
+      width: 13%;
       margin-right: 30px;
       @media (max-width: 768px) {
         font-size: 2rem;
@@ -580,13 +577,12 @@ h5{
   max-width: 100%;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.20);
   cursor: pointer;
-  animation: itemAppear .5s;
-  animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
-  transform: scale(0);
-  animation-fill-mode: both;
+  animation: itemAppear .5s; 
+  animation-timing-function: cubic-bezier(.5,1.58,.34,.82); 
+  animation-fill-mode: both; 
   &__title{
       margin-bottom: 1px;
-      text-overflow: ellipsis;
+      text-overflow: ellipsis; 
       overflow: hidden;
       @media (max-width: 768px) {
         font-size: 2rem;
@@ -597,9 +593,9 @@ h5{
   }
   &__top{
       flex: 1;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
+      white-space: nowrap; 
+      text-overflow: ellipsis; 
+      overflow: hidden; 
       @media (max-width: 375px) {
         align-self: self-end;
       }
@@ -620,7 +616,7 @@ h5{
     margin-right: 0rem;
   }
 }
-  &__conf{
+  &__conf{       /*caché pour qu'il apparaisse au passage de la souris */
       background-color: #99E2D0;
       margin: -1rem -5rem -1rem 1rem;
       width: 4rem;
@@ -706,19 +702,19 @@ h5{
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: rotate(180deg);
-  transition-duration: 0.6s;
+  transform: rotate(180deg); 
+  transition-duration: 0.6s; 
 }
 
 .plat:hover .icon--bg {
-  transform: rotate(0);
+  transform: rotate(0); 
   @media (max-width: 375px) {
     font-size: 1rem;
   }
 }
 
 .fa-check{
-  color: #99E2D0;
+  color: #99E2D0; 
 }
     
 /*boutons */
@@ -741,8 +737,9 @@ h5{
 .button-container{
   display: flex;
   justify-content: center;
+  margin-top: 70px;
   @media (max-width: 768px) {
-    margin-top: 2rem;
+    margin-top: 40px;
   }
   @media (max-width: 375px) {
     margin-top: 3rem;
@@ -750,6 +747,9 @@ h5{
 }
 
 .button1{
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
   width: 32%;
   height: 4rem;
   color: #000000;
@@ -762,9 +762,9 @@ h5{
     width: 55%;
   }
   &:hover{
-      &::after{
-          opacity: 1;
-      }
+    &::after{
+        opacity: 1;
+    }
   }
   &::after{
   content: "";
@@ -774,34 +774,29 @@ h5{
   bottom: 0;
   left: 0;
   border-radius: 30px;
+  background: linear-gradient(180deg,#9356DC 15%, #FF79DA 85%);
   opacity: 0;
   z-index: -1;
   transition: opacity 250ms;
-}
+  }
 }
 
 .favorite{
-  height: 3rem;
-  width: 3rem;
+  height: 88%;
+  width: 14%;
   background-color: transparent;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  position: absolute;
+  cursor: pointer; 
+  position: absolute; 
   background-color: #000;
   border-style: none;
   outline: none;
-  margin-left: 12em;
-  @media (max-width: 768px) {
-    margin-left: 33rem;
-    height: 4rem;
-    width: 12%;
-    font-size: 4rem;
-  }
+  margin-left: 231px;
   @media (max-width: 375px) {
-    margin-left: 20rem;
+    margin-left: 268px;
     font-size: 2rem;
     height: 3rem;
   }
@@ -815,8 +810,8 @@ h5{
   position: absolute;
   opacity: 0;
   transition: .8s;
-  content: "";
-  background: linear-gradient(0deg,#9356dc,#ff79da);
+  content: ""; 
+  background: linear-gradient(0deg,#9356dc,#ff79da); 
 }
 
 .fav{
@@ -825,7 +820,7 @@ h5{
   display: flex;
   align-items: center;
   justify-content: center;
-  mix-blend-mode: lighten;
+  mix-blend-mode: lighten; 
 }
 
 .favorite::before, .fav {
@@ -847,9 +842,9 @@ h5{
  
 /*fonctions scss */ 
 
-@keyframes itemAppear{
+@keyframes itemAppear{ 
   0%{
-      transform: scale(0);
+      transform: scale(0); 
   }
   100%{
       transform: scale(1);
@@ -857,14 +852,14 @@ h5{
 
 }
 
-@keyframes loader {
+@keyframes loader { 
   100% {
     opacity: 0;
     z-index: -10;
   }
 } 
 
-@keyframes jump {
+@keyframes jump {  
   0% {
     transform: translateY(0);
   }
