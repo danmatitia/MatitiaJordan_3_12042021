@@ -616,6 +616,12 @@ footer li a {
   margin-right: auto;
 }
 
+@media (max-width: 414px) {
+  .main .logo {
+    width: 60%;
+  }
+}
+
 @media (max-width: 768px) {
   .main .logo__image {
     width: 94%;
