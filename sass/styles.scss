@@ -157,7 +157,6 @@ body {
 }
 
 .steps__choice {
-  width: 50%;
   display: block;
   align-items: flex-end;
 }
@@ -176,8 +175,8 @@ body {
     margin-left: 0rem;
   }
   &__choice{
-      width: 80%;
       display: flex;
+      align-items: center;
       @media (max-width: 768px) {
         flex-direction: column;
       }
