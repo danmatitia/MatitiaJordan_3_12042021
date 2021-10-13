@@ -904,7 +904,6 @@ h5 {
 @media (max-width: 414px) {
   .plat__price {
     font-size: 1rem;
-    margin-right: 0rem;
   }
 }
 
@@ -929,9 +928,8 @@ h5 {
 
 @media (max-width: 768px) {
   .plat__conf {
-    margin-right: -10rem;
-    height: 167px;
-    width: 18%;
+    margin-right: -11rem;
+    width: 22%;
   }
 }
 
@@ -939,7 +937,7 @@ h5 {
   .plat__conf {
     height: 5rem;
     width: 22%;
-    margin-right: -6rem;
+    margin-right: -29%;
   }
 }
 

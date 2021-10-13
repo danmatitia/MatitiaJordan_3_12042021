@@ -589,7 +589,6 @@ h5{
   }
   @media (max-width: 414px) {
     font-size: 1rem;
-    margin-right: 0rem;
   }
 }
   &__conf{       /*caché pour qu'il apparaisse au passage de la souris */
@@ -602,14 +601,13 @@ h5{
       justify-content: center;
       transition-duration: 0.5s;
       @media (max-width: 768px) {
-        margin-right: -10rem;
-        height: 167px;
-        width: 18%;
+        margin-right: -11rem;
+        width: 22%;
       }
       @media (max-width: 414px) {
         height: 5rem;
         width: 22%;
-        margin-right: -6rem;
+        margin-right: -29%;
       }
   }
 }
