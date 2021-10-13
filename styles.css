@@ -178,38 +178,44 @@ body {
   text-align: center;
 }
 
-.banner p {
-  margin: -6px 0px 31px 0px;
-}
-
 .banner__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  position: relative;
+  display: block;
+  text-decoration: none;
   width: 220px;
   height: 50px;
-  text-align: center;
-  color: #000000;
-  color: #FFFFFF;
+  margin: 30px auto;
   border-radius: 30px;
-  background: linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
-  -webkit-transition: -webkit-box-shadow 150ms linear, -webkit-transform 150ms linear;
-  transition: -webkit-box-shadow 150ms linear, -webkit-transform 150ms linear;
-  transition: box-shadow 150ms linear, transform 150ms linear;
-  transition: box-shadow 150ms linear, transform 150ms linear, -webkit-box-shadow 150ms linear, -webkit-transform 150ms linear;
-  margin-bottom: 2em;
-  outline: none;
-  border-style: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-box-shadow: 0 2px 4px;
+          box-shadow: 0 2px 4px;
+  z-index: 1;
+  color: white;
 }
 
 .banner__title {
   text-align: center;
+}
+
+.banner__button:hover::before {
+  opacity: 1;
+}
+
+.banner__button::before {
+  content: "";
+  position: absolute;
+  border-radius: 30px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#ae80e5));
+  background: linear-gradient(#9356DC, #ae80e5);
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
 }
 
 .steps {
