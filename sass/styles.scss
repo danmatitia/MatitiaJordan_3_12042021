@@ -415,6 +415,9 @@ footer{
         margin-left: 9rem;
     }
     &__image{
+      @media (max-width: 768px) {
+        width: 100%;
+      }
       @media (max-width: 375px) {
         width: 100%;
         margin-left: -5rem;
@@ -461,19 +464,8 @@ footer{
     height: 40rem;
   }
   span{
-    position: absolute;
-    margin-left: 385px;
-    margin-top: 9px;
     font-size: 23px;
     cursor: pointer;
-    @media (max-width: 768px) {
-      margin-left: 457px;
-      margin-top: 17px;
-    }
-    @media (max-width: 375px) {
-      margin-left: 276px;
-      margin-top: 10px;
-    }
     .fa-heart{
       &:hover{
         opacity: 1;
@@ -794,7 +786,7 @@ h5{
   background-color: #000;
   border-style: none;
   outline: none;
-  margin-left: 231px;
+  margin-left: 90%;
   @media (max-width: 375px) {
     margin-left: 268px;
     font-size: 2rem;

@@ -639,6 +639,12 @@ footer li a {
   }
 }
 
+@media (max-width: 768px) {
+  .main .logo__image {
+    width: 100%;
+  }
+}
+
 @media (max-width: 375px) {
   .main .logo__image {
     width: 100%;
@@ -711,25 +717,8 @@ footer li a {
 }
 
 .menu span {
-  position: absolute;
-  margin-left: 385px;
-  margin-top: 9px;
   font-size: 23px;
   cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .menu span {
-    margin-left: 457px;
-    margin-top: 17px;
-  }
-}
-
-@media (max-width: 375px) {
-  .menu span {
-    margin-left: 276px;
-    margin-top: 10px;
-  }
 }
 
 .menu span .fa-heart:hover {
@@ -1217,7 +1206,7 @@ h5 {
   background-color: #000;
   border-style: none;
   outline: none;
-  margin-left: 231px;
+  margin-left: 90%;
 }
 
 @media (max-width: 375px) {
